@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Word Search Application</title>
+  </head>
+  <body>
+    <main>
+      <div class="word-app-wrapper">
+        <div class="word-app-header-content">
+          <h2 class="word-app-header-title">
+            <i class="fas fa-search">
+              <span> find Word</span>
+            </i>
+          </h2>
+
+          <a
+            href="https://www.datamuse.com/api/"
+            class="word-app-header-link"
+            target="_blank"
+            >API HomePage</a
+          >
+        </div>
+      </div>
+
+      <div class="word-app-searchbox">
+        <div class="containair word-app-searchbox-content">
+          <form id="word-search-form">
+            <span class="form-icon">
+              <i class="fa-slid fa-pen-nib"></i>
+            </span>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Enter your word to find Synonyms"
+              name="search_word"
+            />
+            <button type="submit" id="submit-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="spinner">
+        <img src="asset/spinner.svg" alt="" />
+      </div>
+
+      <div class="word-app-body">
+        <div class="container word-app-body-cntent">
+          <div id="word-list"></div>
+
+          <button type="button" id="copy-btn">
+            <i class="fas fa-copy">Copy</i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
